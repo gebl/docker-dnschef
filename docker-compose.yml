@@ -1,6 +1,8 @@
 version: '2'
 services:
   dnschef:
+    volumes:
+      - ./dnschef.ini:/dnschef.ini
     build: .
     ports:
       - "53:53"

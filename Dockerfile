@@ -15,6 +15,6 @@ EXPOSE 53/udp
 
 ADD runnit.sh /
 RUN chmod 755 runnit.sh
-ADD dnschef.ini /
+ADD dnschef.ini.tmpl /
 
 CMD /runnit.sh
