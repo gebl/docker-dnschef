@@ -1,0 +1,8 @@
+version: '2'
+services:
+  dnschef:
+    build: .
+    ports:
+      - "53:53"
+      - "53:53/udp"
+    restart: unless-stopped
